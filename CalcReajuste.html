@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- calcular reajuste de salario-->
+	
+	
+</head>
+<body>
+	<label>entre com seu salario</label>
+		<input id="v1" type="text"/>
+	<button id="calc" onclick="calcValores()">calcular</button>
+<script>
+		function calcValores(){
+		var s1 = document.getElementById("v1").value;
+		var val1= s1/100;
+		if(s1<500)
+		{
+		     var por = val1*1.20;
+			 alert("reajuste de R$: "+por);
+		}
+		else if(s1>=500 || s1<=1000)
+		{
+		 var por1 = val1*1.15;
+			 alert("reajuste de R$: "+por1);
+		}
+		else
+		{
+		var por2 = val1*1.10;
+			 alert("reajuste de R$: "+por1);
+		}
+		
+		
+	}
+	</script>
+</body>
+</html> 
