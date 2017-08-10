@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+
+   var n= parseInt(prompt('Digite seu nome'));
+   var nome = n;
+   
+   var n1= parseInt(prompt('Digite o dia do seu nascimento'));
+   var dia = n1;
+  
+   var n2= parseInt(prompt('Digite o mes do seu nascimento'));
+   var mes = n2;
+   
+   var n3= parseInt(prompt('Digite o ano do seu nascimento'));
+   var ano = n3;
+   
+   var year= dia+"/"+mes+"/"+ano;
+   
+   var n4= parseInt(prompt('Digite o ano do atual'));
+   var anoAt = n4;
+   
+	var idade = parseInt(anoAt) - parseInt(ano);
+	
+   var r = confirm("ja fez aniversario esse ano");
+    if (r == true) {
+                   alert("voce completou "+idade+" anos em "+ dia+"/"+mes+"/"+anoAt);
+                   }
+	else {
+           alert("Voce vai "+idade+"anos em "+ dia+"/"+mes+"/"+anoAt);
+         }
+      
+
+
+</script>
+</body>
+</html>
