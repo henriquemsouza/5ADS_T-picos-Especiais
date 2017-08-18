@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+  <!--calcular  o valor da compra-->
+  
+</head>
+<body>
+	<fieldset>
+		<legend>valor da compra</legend>
+		<label>unidades</label>
+		<input id="v1" type="text"/>
+		<label>produto preço </label>
+		<input id="v2" type="text"/>
+		<br>
+		<br>
+		<label>numero de parcelas </label>
+		<input id="pa" type="text"/>
+		<button id="somar" onclick="somarValores()">Somar</button>
+	</fieldset>
+<script>
+		function somarValores(){
+		var s1 = document.getElementById("v1").value;
+		var s2 = document.getElementById("v2").value;
+		var result = parseInt(s1) * parseInt(s2);
+		 
+		
+	       
+			var grade = document.getElementById("pa").value;
+          
+            {
+               case '2':
+			   var por = result*0.05;
+			   alert( "O Valor da sua compra R$: "+result+ "reajuste de R$: "+por);
+               break;
+            
+               case '3':
+			   var por = result*0.07;
+			   alert( "O Valor da sua compra R$: "+result+ "reajuste de R$: "+por);
+               break;
+            
+               case '4': 
+			   var por = result*0.10;
+			   alert( "O Valor da sua compra R$: "+result+ "reajuste de R$: "+por);
+               break;
+            
+              
+            
+               default: alert( "O Valor da sua compra R$: "+result+);
+            }
+		
+		
+	}
+	</script>
+</body>
+</html> 
